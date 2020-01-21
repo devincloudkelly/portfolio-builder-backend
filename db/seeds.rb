@@ -55,4 +55,4 @@ Accolade.create(name: '4th place trophy', summary: 'I came in fourth place', lin
 Accolade.create(name: 'Nobel Prize', summary: 'Discovered method to always open pickle jars on the first try.', link: '', order: [1..20].sample, user_id: User.all.sample.id)
 Accolade.create(name: 'Guinness Book of Records', summary: 'Ate the largest pizza in the world.', link: '', order: [1..20].sample, user_id: User.all.sample.id)
 Accolade.create(name: 'AWS certified', summary: 'I can host sites on AWS', link: '', order: [1..20].sample, user_id: User.all.sample.id)
-Accolade.create(name: 'Mom\'s favorite child' summary: 'She tells the others she doesn\'t pick favorites, but she does. It\'s me.' link: '', order: [1..20].sample, user_id: User.all.sample.id)
+Accolade.create(name: 'Mom\'s favorite child', summary: 'She tells the others she doesn\'t pick favorites, but she does. It\'s me.', link: '', order: [1..20].sample, user_id: User.all.sample.id)
