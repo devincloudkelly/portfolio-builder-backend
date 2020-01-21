@@ -41,3 +41,18 @@ Experience.create(company: 'U.S. Treasury', role: 'Software Engineer', summary: 
 Experience.create(company: 'Starbucks', role: 'Software Engineer', summary: 'This is what I do at work. It may not be the biggest role, but it is something.', start_date: 'June 2015', end_date: 'Jan, 2020', external_link: 'https://google.com', order: [1..20].sample, user_id: User.all.sample.id)
 Experience.create(company: 'Self-employed', role: 'Software Engineer', summary: 'This is what I do at work. It may not be the biggest role, but it is something.', start_date: 'June 2015', end_date: 'Jan, 2020', external_link: 'https://google.com', order: [1..20].sample, user_id: User.all.sample.id)
 
+Education.create(institution: 'Flatiron', major: 'Software Engineering', grad_date: 'Feb 2020', external_link: '', order: [1..20].sample, user_id: User.all.sample.id)
+Education.create(institution: 'Harvard', major: 'Janitorial Studies', grad_date: 'Feb 2015', external_link: '', order: [1..20].sample, user_id: User.all.sample.id)
+Education.create(institution: 'USC', major: 'Basket Weaving', grad_date: 'Feb 2012', external_link: '', order: [1..20].sample, user_id: User.all.sample.id)
+Education.create(institution: 'Flatiron', major: 'Software Engineering', grad_date: 'Feb 2020', external_link: '', order: [1..20].sample, user_id: User.all.sample.id)
+Education.create(institution: 'Harvard', major: 'Janitorial Studies', grad_date: 'Feb 2015', external_link: '', order: [1..20].sample, user_id: User.all.sample.id)
+Education.create(institution: 'USC', major: 'Basket Weaving', grad_date: 'Feb 2012', external_link: '', order: [1..20].sample, user_id: User.all.sample.id)
+Education.create(institution: 'Flatiron', major: 'Software Engineering', grad_date: 'Feb 2020', external_link: '', order: [1..20].sample, user_id: User.all.sample.id)
+Education.create(institution: 'Harvard', major: 'Janitorial Studies', grad_date: 'Feb 2015', external_link: '', order: [1..20].sample, user_id: User.all.sample.id)
+Education.create(institution: 'USC', major: 'Basket Weaving', grad_date: 'Feb 2012', external_link: '', order: [1..20].sample, user_id: User.all.sample.id)
+
+Accolade.create(name: '4th place trophy', summary: 'I came in fourth place', link: '', order: [1..20].sample, user_id: User.all.sample.id)
+Accolade.create(name: 'Nobel Prize', summary: 'Discovered method to always open pickle jars on the first try.', link: '', order: [1..20].sample, user_id: User.all.sample.id)
+Accolade.create(name: 'Guinness Book of Records', summary: 'Ate the largest pizza in the world.', link: '', order: [1..20].sample, user_id: User.all.sample.id)
+Accolade.create(name: 'AWS certified', summary: 'I can host sites on AWS', link: '', order: [1..20].sample, user_id: User.all.sample.id)
+Accolade.create(name: 'Mom\'s favorite child' summary: 'She tells the others she doesn\'t pick favorites, but she does. It\'s me.' link: '', order: [1..20].sample, user_id: User.all.sample.id)
