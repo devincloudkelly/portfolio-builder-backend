@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_21_225726) do
+ActiveRecord::Schema.define(version: 2020_01_21_225954) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,6 +22,8 @@ ActiveRecord::Schema.define(version: 2020_01_21_225726) do
     t.integer "order"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "user_id", null: false
+    t.index ["user_id"], name: "index_accolades_on_user_id"
   end
 
   create_table "educations", force: :cascade do |t|
@@ -32,6 +34,8 @@ ActiveRecord::Schema.define(version: 2020_01_21_225726) do
     t.integer "order"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "user_id", null: false
+    t.index ["user_id"], name: "index_educations_on_user_id"
   end
 
   create_table "experiences", force: :cascade do |t|
@@ -44,6 +48,8 @@ ActiveRecord::Schema.define(version: 2020_01_21_225726) do
     t.integer "order"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "user_id", null: false
+    t.index ["user_id"], name: "index_experiences_on_user_id"
   end
 
   create_table "projects", force: :cascade do |t|
@@ -55,6 +61,8 @@ ActiveRecord::Schema.define(version: 2020_01_21_225726) do
     t.integer "order"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "user_id", null: false
+    t.index ["user_id"], name: "index_projects_on_user_id"
   end
 
   create_table "skills", force: :cascade do |t|
@@ -79,5 +87,9 @@ ActiveRecord::Schema.define(version: 2020_01_21_225726) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "accolades", "users"
+  add_foreign_key "educations", "users"
+  add_foreign_key "experiences", "users"
+  add_foreign_key "projects", "users"
   add_foreign_key "skills", "users"
 end
