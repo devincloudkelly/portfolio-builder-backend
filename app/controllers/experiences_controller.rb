@@ -16,13 +16,13 @@ class ExperiencesController < ApplicationController
     end
 
     def update
-        experience = Experience.find_by(params[:id])
+        experience = Experience.find_by(id: params[:id])
         experience_params.update(experience_params)
         render json: experience
     end
 
     def destroy
-        experience = Experience.find_by(params[:id])
+        experience = Experience.find_by(id: params[:id])
         experience.destroy
     end
 
