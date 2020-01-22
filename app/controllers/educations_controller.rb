@@ -29,7 +29,7 @@ class EducationsController < ApplicationController
     private
 
     def education_params
-        params.require(:education).permit(:company, :role, :summary, :start_date, :end_date, :external_link, :order, :user_id)
+        params.require(:education).permit(:institution, :major, :grad_date, :external_link, :order, :user_id)
     end
 
 end
