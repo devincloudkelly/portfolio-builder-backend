@@ -23,7 +23,9 @@ class ExperiencesController < ApplicationController
 
     def destroy
         experience = Experience.find_by(id: params[:id])
+        temp = experience
         experience.destroy
+        render json: temp
     end
 
     private
