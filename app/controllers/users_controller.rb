@@ -6,9 +6,9 @@ class UsersController < ApplicationController
 
     def create 
         # user_object = {}
-        user = User.find_by(email_address: 'tt@gmail.com')
+        user = User.find_by(email_address: params[:email_address])
         if (!user)
-            user = User.create(email_address: 'tt@gmail.com')
+            user = User.create(email_address: params[:email_address])
         end
 
         # user = User.find_by(email_address: 'tt@gmail.com')
