@@ -22,7 +22,9 @@ class SkillsController < ApplicationController
 
     def destroy
         skill = Skill.find_by(id: params[:id])
+        temp = skill
         skill.destroy
+        render json: temp
     end
 
     private
