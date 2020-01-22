@@ -17,7 +17,7 @@ class ExperiencesController < ApplicationController
 
     def update
         experience = Experience.find_by(id: params[:id])
-        experience_params.update(experience_params)
+        experience.update(experience_params)
         render json: experience
     end
 
@@ -29,7 +29,7 @@ class ExperiencesController < ApplicationController
     private
 
     def experience_params
-        params.require(:experience).permit(:company, :role, :summary, :start_date, :end_date, :external_link, :order, :user_id)
+        params.require(:experience).permit(:id, :company, :role, :summary, :start_date, :end_date, :external_link, :order, :user_id)
     end
 
 end

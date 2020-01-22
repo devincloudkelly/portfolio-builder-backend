@@ -16,7 +16,7 @@ class AccoladesController < ApplicationController
 
     def update
         accolade = Accolade.find_by(id: params[:id])
-        accolade_params.update(accolade_params)
+        accolade.update(accolade_params)
         render json: accolade
     end
 
@@ -28,6 +28,6 @@ class AccoladesController < ApplicationController
     private
 
     def accolade_params
-        params.require(:accolade).permit(:name, :summary, :link, :order, :user_id)
+        params.require(:accolade).permit(:id, :name, :summary, :link, :order, :user_id)
     end
 end

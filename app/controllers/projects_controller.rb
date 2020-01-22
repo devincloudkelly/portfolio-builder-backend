@@ -17,7 +17,7 @@ class ProjectsController < ApplicationController
 
     def update
         project = Project.find_by(id: params[:id])
-        project_params.update(project_params)
+        project.update(project_params)
         render json: project
     end
 
@@ -29,7 +29,7 @@ class ProjectsController < ApplicationController
     private
 
     def project_params
-        params.require(:project).permit(:project_url, :name, :summary, :img_url, :languages_used, :order, :user_id)
+        params.require(:project).permit(:id, :project_url, :name, :summary, :img_url, :languages_used, :order, :user_id)
     end
 
 end

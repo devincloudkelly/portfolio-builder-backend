@@ -16,7 +16,7 @@ class SkillsController < ApplicationController
 
     def update
         skill = Skill.find_by(id: params[:id])
-        skill_params.update(skill_params)
+        skill.update(skill_params)
         render json: skill
     end
 
@@ -28,6 +28,6 @@ class SkillsController < ApplicationController
     private
 
     def skill_params
-        params.require(:skill).permit(:category, :name, :proficiency, :link_url, :order, :user_id)
+        params.require(:skill).permit(:id, :category, :name, :proficiency, :link_url, :order, :user_id)
     end
 end
