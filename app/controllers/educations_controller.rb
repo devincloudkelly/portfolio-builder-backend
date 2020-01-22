@@ -23,7 +23,9 @@ class EducationsController < ApplicationController
 
     def destroy
         education = Education.find_by(id: params[:id])
+        temp = education
         education.destroy
+        render json: temp
     end
 
     private

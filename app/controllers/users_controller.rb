@@ -20,6 +20,7 @@ class UsersController < ApplicationController
             experiences: user.experiences,
             accolades: user.accolades
         }
+        # render json: user_object
         render json: user_object
     end
 end

@@ -23,7 +23,9 @@ class ProjectsController < ApplicationController
 
     def destroy
         project = Project.find_by(id: params[:id])
+        temp = project
         project.destroy
+        render json: temp
     end
 
     private

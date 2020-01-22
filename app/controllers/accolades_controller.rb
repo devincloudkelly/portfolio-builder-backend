@@ -22,7 +22,9 @@ class AccoladesController < ApplicationController
 
     def destroy
         accolade = Accolade.find_by(id: params[:id])
+        temp = accolade
         accolade.destroy
+        render json: temp
     end
 
     private
