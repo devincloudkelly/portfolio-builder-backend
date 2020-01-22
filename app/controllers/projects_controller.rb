@@ -12,6 +12,7 @@ class ProjectsController < ApplicationController
 
     def create
         project = Project.create(project_params)
+        puts project
         render json: project
     end
 
@@ -23,7 +24,9 @@ class ProjectsController < ApplicationController
 
     def destroy
         project = Project.find_by(id: params[:id])
+        response = project
         project.destroy
+        render json: response
     end
 
     private
