@@ -1,4 +1,7 @@
 class User < ApplicationRecord
+    validates :email_address, length: { minimum: 6 }
+    validates :email_address, uniqueness: true
+
     has_many :skills
     has_many :projects
     has_many :educations
