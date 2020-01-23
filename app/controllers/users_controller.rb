@@ -1,7 +1,16 @@
 class UsersController < ApplicationController
     def show
         user = User.find_by(id: params[:id])
-        render json: user
+        user_object = {
+            user: user,
+            skills: user.skills,
+            projects: user.projects,
+            educations: user.educations,
+            experiences: user.experiences,
+            accolades: user.accolades
+        }
+        # render json: user_object
+        render json: user_object
     end
 
     def create 
