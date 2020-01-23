@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_21_225954) do
+ActiveRecord::Schema.define(version: 2020_01_23_183040) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -78,11 +78,11 @@ ActiveRecord::Schema.define(version: 2020_01_21_225954) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "name"
-    t.string "email_address"
-    t.string "avatar_url"
-    t.string "background_url"
-    t.string "template"
+    t.string "name", default: ""
+    t.string "email_address", default: "null@gmail.com"
+    t.string "avatar_url", default: ""
+    t.string "background_url", default: ""
+    t.string "template", default: "default"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
