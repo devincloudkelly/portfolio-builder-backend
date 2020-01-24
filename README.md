@@ -1,25 +1,38 @@
-# README
+# Portfolio Builder Lite
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Hello! This is the github repo for the server-side of Portfolio Builder Lite.
 
-Things you may want to cover:
+* As a user, you can:
+    sign in with your current email or create a new user account
+    view, create and edit items in your portfolio
+    view your finalyzed portfolio!
 
-* Ruby version
+## Prerequisites ## 
 
-* System dependencies
+To use: Please clone down this repository by copying the link and running ```git clone <repo_url>``` in your terminal. 
 
-* Configuration
+Please also make sure to clone down the frontend, which requires that you have a node package manager ```npm``` or ```yarn``` installed. Please see documentation before getting started. 
 
-* Database creation
+https://github.com/moliver4/portfolio-builder-client
 
-* Database initialization
+Frontend:
+```javascript
+$ npm install
 
-* How to run the test suite
+$ npm start
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+Backend:
+```ruby
+$ bundle install
+$ rails db:create
+$ rails db:migrate
+$ rails db:seed //if you want dummy data
 
-* Deployment instructions
+$ rails s //start server 
 
-* ...
+```
 
+## Image credits ## 
+
+Logos displayed through the app were designed by DinosoftLabs. You can find more of their work here: https://www.flaticon.com/authors/dinosoftlabs
