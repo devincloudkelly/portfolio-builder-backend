@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_23_183040) do
+ActiveRecord::Schema.define(version: 2020_01_24_183655) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -85,6 +85,9 @@ ActiveRecord::Schema.define(version: 2020_01_23_183040) do
     t.string "template", default: "default"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "snippet", default: ""
+    t.string "bio", default: ""
+    t.string "personal_url", default: ""
   end
 
   add_foreign_key "accolades", "users"
