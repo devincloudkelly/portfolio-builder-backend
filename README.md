@@ -7,7 +7,7 @@ Hello! This is the github repo for the server-side of Portfolio Builder Lite.
     view, create and edit items in your portfolio
     view your finalyzed portfolio!
 
-# Watch the video to see how it works:
+## Watch the video to see how it works: ##
 [![Portfolio Builder Lite Video](http://img.youtube.com/vi/LLfgOdKEudE/0.jpg)](http://www.youtube.com/watch?v=LLfgOdKEudE "Portfolio Builder Lite")
 
 
@@ -41,6 +41,6 @@ $ rails s //start server
 
 Logos displayed through the app were designed by DinosoftLabs. You can find more of their work here: https://www.flaticon.com/authors/dinosoftlabs
 
-# Creators
+## Creators ##
 
 Created by [moliver4](http://github.com/moliver4), [learn-co-kat](http://github.com/learn-co-kat), [Clashbuster](http://github.com/Clashbuster), and [devincloudkelly](http://github.com/devincloudkelly)
