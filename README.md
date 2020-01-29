@@ -7,8 +7,8 @@ Hello! This is the github repo for the server-side of Portfolio Builder Lite.
     view, create and edit items in your portfolio
     view your finalyzed portfolio!
 
+Watch the video to see how it works:
 [![Portfolio Builder Lite Video](http://img.youtube.com/vi/LLfgOdKEudE/0.jpg)](http://www.youtube.com/watch?v=LLfgOdKEudE "Portfolio Builder Lite")
-
 
 
 ## Prerequisites ## 
