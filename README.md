@@ -44,7 +44,6 @@ $ rails s //start server
 
 
 ### Creators
-Created by:
 
 [Tiffany Tang](http://github.com/moliver4)
 
