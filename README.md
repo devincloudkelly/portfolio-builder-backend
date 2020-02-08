@@ -42,9 +42,6 @@ $ rails s //start server
 
 ```
 
-## Image credits ## 
-
-Logos displayed through the app were designed by DinosoftLabs. You can find more of their work here: https://www.flaticon.com/authors/dinosoftlabs
 
 ## Creators ##
 
