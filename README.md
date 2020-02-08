@@ -44,8 +44,8 @@ $ rails s //start server
 
 
 ## Creators ##
-
 Created by: 
+
 [moliver4](http://github.com/moliver4)
 
 [learn-co-kat](http://github.com/learn-co-kat)
