@@ -43,16 +43,16 @@ $ rails s //start server
 ```
 
 
-## Creators ##
-Created by: 
+### Creators
+Created by:
 
-[moliver4](http://github.com/moliver4)
+[Tiffany Tang](http://github.com/moliver4)
 
-[learn-co-kat](http://github.com/learn-co-kat)
+[Katrina Reinsdorff](http://github.com/learn-co-kat)
 
-[Clashbuster](http://github.com/Clashbuster)
+[Taylor Coon](http://github.com/Clashbuster)
 
-[devincloudkelly](http://github.com/devincloudkelly)
+[Devin Kelly](http://github.com/devincloudkelly)
 
 ## Image credits ## 
 
