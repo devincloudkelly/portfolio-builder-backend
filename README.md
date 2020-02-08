@@ -7,8 +7,10 @@ Hello! This is the github repo for the server-side of Portfolio Builder Lite.
     view, create and edit items in your portfolio
     view your finalyzed portfolio!
 
+* After your portfolio is created, the link can be shared without a user needing to login. So your portfolio/resume can be seen by an employer directly without hassle.
+
 ## Watch the video to see how it works: ##
-[![Portfolio Builder Lite Video](http://img.youtube.com/vi/LLfgOdKEudE/0.jpg)](http://www.youtube.com/watch?v=LLfgOdKEudE "Portfolio Builder Lite")
+![Demo Gif Here](https://github.com/moliver4/portfolio-builder-client/blob/master/ezgif.com-video-to-gif.gif)
 
 
 ## Prerequisites ## 
