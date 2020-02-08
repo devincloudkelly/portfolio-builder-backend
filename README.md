@@ -12,6 +12,9 @@ Hello! This is the github repo for the server-side of Portfolio Builder Lite.
 ## Watch the video to see how it works: ##
 ![Demo Gif Here](https://github.com/moliver4/portfolio-builder-client/blob/master/ezgif.com-video-to-gif.gif)
 
+## Why We Made This ##
+Working in a group collaborative effort, we wanted to fully exercise our understanding of ReactJS and Routing. We wanted to create something that would allow all team members to gain important experience with async behaviors, controlled forms, CSS, etc, while also providing a potentially useful product.
+It is our hope to host this so that people (not just those in technical fields), will be able to use it to quickly generate a resume to show a prospective employer.
 
 ## Prerequisites ## 
 
@@ -45,4 +48,15 @@ Logos displayed through the app were designed by DinosoftLabs. You can find more
 
 ## Creators ##
 
-Created by [moliver4](http://github.com/moliver4), [learn-co-kat](http://github.com/learn-co-kat), [Clashbuster](http://github.com/Clashbuster), and [devincloudkelly](http://github.com/devincloudkelly)
+Created by: 
+[moliver4](http://github.com/moliver4)
+
+[learn-co-kat](http://github.com/learn-co-kat)
+
+[Clashbuster](http://github.com/Clashbuster)
+
+[devincloudkelly](http://github.com/devincloudkelly)
+
+## Image credits ## 
+
+Logos displayed through the app were designed by DinosoftLabs. You can find more of their work here: https://www.flaticon.com/authors/dinosoftlabs
