@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_24_183655) do
+ActiveRecord::Schema.define(version: 2020_02_17_174639) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -88,6 +88,7 @@ ActiveRecord::Schema.define(version: 2020_01_24_183655) do
     t.string "snippet", default: ""
     t.string "bio", default: ""
     t.string "personal_url", default: ""
+    t.string "password_digest"
   end
 
   add_foreign_key "accolades", "users"
