@@ -19,6 +19,7 @@ class Api::V1::UsersController < ApplicationController
         # user_object = {}
         user = User.create(user_params)
         if user.valid? 
+            @token = encode_token(user_id: user.id)
             user_object = {
             user: user,
             skills: user.skills,
@@ -27,7 +28,7 @@ class Api::V1::UsersController < ApplicationController
             experiences: user.experiences,
             accolades: user.accolades
         }
-            render json: user_object, status: :created
+            render json: { user: user_object, jwt: @token }, status: :created
         else
             render json: { error: 'failed to create user' }, status: :not_acceptable
         end
@@ -50,6 +51,6 @@ class Api::V1::UsersController < ApplicationController
     private
 
     def user_params
-        params.require(:user).permit(:id, :name, :password_digest, :email_address, :avatar_url, :background_url, :template, :snippet, :bio, :personal_url)
+        params.require(:user).permit(:id, :name, :password, :email_address, :avatar_url, :background_url, :template, :snippet, :bio, :personal_url)
     end
 end
