@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_24_183655) do
+ActiveRecord::Schema.define(version: 2020_02_17_194408) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -80,8 +80,8 @@ ActiveRecord::Schema.define(version: 2020_01_24_183655) do
   create_table "users", force: :cascade do |t|
     t.string "name", default: ""
     t.string "email_address", default: "null@gmail.com"
-    t.string "avatar_url", default: ""
-    t.string "background_url", default: ""
+    t.string "avatar_url", default: "https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+    t.string "background_url", default: "https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
     t.string "template", default: "default"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
