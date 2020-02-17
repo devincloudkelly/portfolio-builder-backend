@@ -1,6 +1,6 @@
 class Api::V1::UsersController < ApplicationController
-    skip_before_action :authorized, only [:create, :show]
-    
+    skip_before_action :authorized, only: [:create, :show]
+
     def show
         user = User.find_by(id: params[:id])
         user_object = {
@@ -19,21 +19,26 @@ class Api::V1::UsersController < ApplicationController
         # user_object = {}
         user = User.create(user_params)
         if user.valid? 
-            render json: user, status: :created
+            user_object = {
+            user: user,
+            skills: user.skills,
+            projects: user.projects,
+            educations: user.educations,
+            experiences: user.experiences,
+            accolades: user.accolades
+        }
+            render json: user_object, status: :created
         else
             render json: { error: 'failed to create user' }, status: :not_acceptable
         end
         # user = User.find_by(email_address: 'tt@gmail.com')
-        # user_object = {
-        #     user: user,
-        #     skills: user.skills,
-        #     projects: user.projects,
-        #     educations: user.educations,
-        #     experiences: user.experiences,
-        #     accolades: user.accolades
-        # }
+        
         # render json: user_object
         # render json: user_object
+    end
+
+    def profile
+        render json: { user: current_user }, status: :accepted
     end
 
     def update
@@ -45,6 +50,6 @@ class Api::V1::UsersController < ApplicationController
     private
 
     def user_params
-        params.require(:user).permit(:id, :name, :password, :email_address, :avatar_url, :background_url, :template, :snippet, :bio, :personal_url)
+        params.require(:user).permit(:id, :name, :password_digest, :email_address, :avatar_url, :background_url, :template, :snippet, :bio, :personal_url)
     end
 end
