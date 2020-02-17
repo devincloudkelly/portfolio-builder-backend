@@ -1,4 +1,4 @@
-class AccoladesController < ApplicationController
+class Api::V1::AccoladesController < ApplicationController
     def index
         accolades = Accolade.all
         render json: accolades
