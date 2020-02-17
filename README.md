@@ -10,7 +10,7 @@ Hello! This is the github repo for the server-side of Portfolio Builder Lite.
 * After your portfolio is created, the link can be shared without a user needing to login. So your portfolio/resume can be seen by an employer directly without hassle.
 
 ## How it works: ##
-![Demo Gif Here](https://github.com/moliver4/portfolio-builder-client/blob/master/ezgif.com-video-to-gif.gif)
+![Demo Gif Here](https://github.com/moliver4/portfolio-builder-client/blob/master/pbdemo.gif)
 
 ## Why We Made This ##
 Working in a group collaborative effort, we wanted to fully exercise our understanding of ReactJS and Routing. We wanted to create something that would allow all team members to gain important experience with async behaviors, controlled forms, CSS, etc, while also providing a potentially useful product.
